@@ -1,0 +1,96 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+  background: url(../../images/raycharles.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+section:nth-child(1){
+  color: white;
+}
+
+section:nth-child(2){
+  background: #F4F3EE;
+  color: blue;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/* FLEX */
+.flex-container {
+  background: transparent;
+  gap: 20px;
+  display: flex;
+  border: 4px solid black;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* this selector selects all divs inside of .flex-container */
+.flex-container div {
+  display: flex;
+  background: transparent;
+  border: 4px solid salmon;
+  flex: 1;
+}
+
+.flex-container .banner {
+  position: absolute;
+  top:0;
+  font: 20pt Roboto Light;
+  padding: 16px;
+  width: 95vw;
+  justify-content: space-between;
+}
+
+.flex-container .lowerbanner {
+  position: absolute;
+  bottom:0;
+  font: 20pt Roboto Light;
+  padding: 16px;
+  width: 95vw;
+  justify-content: space-between;
+}
+
+.flex-container .section1title {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container .playbutton {
+  width: fit-content;
+  align-self: center;
+  padding-top: 50px;
+  transform: scale(2);
+}
+
+.flex-container .section2 {
+  color: black;
+}
