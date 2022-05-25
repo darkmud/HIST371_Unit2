@@ -61,6 +61,18 @@ section:nth-child(5){
   min-height: 100vh;
 }
 
+section:nth-child(6){
+  background-color: #090D0C;
+  min-height: 100vh;
+}
+
+section:nth-child(7){
+  background: url(../../images/smokyjazz.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
 /* FLEX */
 .flex-container {
   background: transparent;
