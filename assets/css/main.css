@@ -23,8 +23,6 @@ body {
 
 section {
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
-  font-size: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,33 +30,55 @@ section {
 }
 
 section:nth-child(1){
+  font-size: 120px;
   color: white;
+  min-height: 100vh;
 }
 
 section:nth-child(2){
-  background: #F4F3EE;
-  color: blue;
-  justify-content: flex-start;
-  align-items: flex-start;
+  background: url(../../images/raycharlestatuecopy.jpg) no-repeat center center fixed;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
 }
 
+section:nth-child(3) {
+  height:75vh;
+  background-image: url(../../images/raycharles2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section:nth-child(4){
+  background-color: #090D0C;
+  min-height: 100vh;
+}
+
+section:nth-child(5){
+  background: url(../../images/smokyjazz.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
 
 /* FLEX */
 .flex-container {
   background: transparent;
   gap: 20px;
   display: flex;
-  border: 4px solid black;
+  border: 0px solid black;
   flex-direction: column;
   width: 100%;
+  padding: 20px;
 }
 
 /* this selector selects all divs inside of .flex-container */
 .flex-container div {
   display: flex;
   background: transparent;
-  border: 4px solid salmon;
+  border: 0px solid salmon;
   flex: 1;
+  gap: 20px;
 }
 
 .flex-container .banner {
@@ -91,6 +111,51 @@ section:nth-child(2){
   transform: scale(2);
 }
 
-.flex-container .section2 {
-  color: black;
+.flex-container .section2content {
+  padding: 40px;
+  gap:100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container .section2header {
+  color: #F5F5F5;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  justify-content: center;
+}
+
+.flex-container .section2text {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font: 24pt Roboto Light;
+  padding: 25px;
+  background-color: rgba(0,0,0, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container .section3text {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font: 16pt Roboto Light;
+  padding: 25px;
+  background-color: rgba(0,0,0, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius:10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container .section2photo {
+  border-radius: 10px;
+}
+
+img {
+  max-height:100%;
+  max-width: 100%;
 }
